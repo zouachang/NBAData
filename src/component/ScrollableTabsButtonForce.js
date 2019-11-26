@@ -46,8 +46,12 @@ class ScrollableTabsButtonForce extends Component {
     const keys = Object.keys(rankName);
     keys.forEach(
       (key) => {
-        if (playerData[key]) {
-          playerRankData[rankName[key]] = playerData[key].slice(0, 30);
+        if (Array.isArray(playerData[key])) {
+          if (playerData[key].length > 30) {
+            playerRankData[rankName[key]] = playerData[key].slice(0, 30);
+          } else {
+            playerRankData[rankName[key]] = playerData[key];
+          }
         }
       });
     return playerRankData;
