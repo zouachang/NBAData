@@ -20,8 +20,7 @@ const styles = theme => ({
         width: '100%',
     },
     tableWrapper: {
-        // maxHeight: 690,
-        height:'97vh',
+        height:'100vh',
         overflow: 'auto',
     },
     row: {

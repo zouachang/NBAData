@@ -12,7 +12,7 @@ import StickyPlayerTable from './StickyPlayerTable';
 const styles = theme => ({
   root: {
     flexGrow: 1,
-    height: '97vh',
+    height: '100vh',
     display: 'flex',
   },
   bar: {
