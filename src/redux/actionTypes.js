@@ -1,0 +1,2 @@
+export const INIT_TEAM_DATA = "INIT_TEAM_DATA";
+export const INIT_PLAYER_DATA = "INIT_PLAYER_DATA";
