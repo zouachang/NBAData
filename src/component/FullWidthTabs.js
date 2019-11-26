@@ -51,7 +51,7 @@ export default function FullWidthTabs() {
         >
           <Tab label="排行" {...a11yProps(0)} />
           <Tab label="球員榜" {...a11yProps(1)} />
-          <Tab label="球隊榜" {...a11yProps(2)} />
+          {/* <Tab label="球隊榜" {...a11yProps(2)} /> */}
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -66,9 +66,9 @@ export default function FullWidthTabs() {
         <TabPanel value={value} index={1} dir={theme.direction}>
           <ScrollableTabsButtonForce/>
         </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
+        {/* <TabPanel value={value} index={2} dir={theme.direction}>
           <ScrollableTabsButtonForce/>
-        </TabPanel>
+        </TabPanel> */}
       </SwipeableViews>
     </div>
   );
