@@ -5,11 +5,7 @@ export const initTeamData = () => {
     return dispatch => {
         return (
 
-            axios.get('http://wc.miguvideo.com/vms-worldcup/competition-rank/team-scoreboard/2221402/REG', {
-                headers: {
-                    'Access-Control-Allow-Origin': '*'
-                }
-            }).then(
+            axios.get('/vms-worldcup/competition-rank/team-scoreboard/2221402/REG').then(
                     (res) => {
                         if (res.data.code === 200 && res.data.body && res.data.body.standings) {
                             dispatch(initTeamDataAction(res.data.body.standings));
@@ -26,7 +22,7 @@ export const initTeamData = () => {
 export const initPlayerData = () => {
     return dispatch => {
         return (
-            axios.get('http://wc.miguvideo.com/vms-worldcup/competition-rank/player-season-rank/2/REG/2221402/2/1')
+            axios.get('vms-worldcup/competition-rank/player-season-rank/2/REG/2221402/2/1')
                 .then(
                     (res) => {
                         if (res.data.code === 200 && res.data.body && res.data.body) {
