@@ -13,6 +13,7 @@ export const initTeamData = () => {
                     })
                 .catch(
                     (e) => {
+                        dispatch(initTeamDataAction([]));
                     })
         )
     }
@@ -30,6 +31,7 @@ export const initPlayerData = () => {
                     })
                 .catch(
                     (e) => {
+                        dispatch(initPlayerDataAction({}));
                     })
         )
     }
